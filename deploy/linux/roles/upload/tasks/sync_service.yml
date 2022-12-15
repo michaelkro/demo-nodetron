@@ -5,7 +5,7 @@
     path: ~/{{ service_id }}
     state: directory
 
-- ansible.posix.synchronize: 
+- synchronize: 
     dest: ~/{{ service_id }}
     src: ../../../../../engine/
     rsync_opts:
